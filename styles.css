@@ -1,0 +1,143 @@
+/* Fonte básica */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff0f5;
+    color: #4b2e2e;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ffe4e6;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #d63384;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  .mensagem {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .mensagem h2 {
+    font-size: 1.8rem;
+    color: #c2185b;
+    margin-bottom: 1rem;
+  }
+  
+  .mensagem p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .galeria h3 {
+    text-align: center;
+    color: #c2185b;
+    margin-bottom: 1rem;
+  }
+  
+  .imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .imagens img {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .imagens img:hover {
+    transform: scale(1.05);
+  }
+  
+  .surpresa {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .surpresa button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .surpresa button:hover {
+    background-color: #c2185b;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #ffe4e6;
+    padding: 1rem;
+    color: #d63384;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+  }
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    transform: rotate(45deg);
+    animation: fall 2s ease-out forwards;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .heart::before,
+  .heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+  }
+  
+  .heart::before {
+    top: -10px;
+    left: 0;
+  }
+  
+  .heart::after {
+    left: -10px;
+    top: 0;
+  }
+  
+  @keyframes fall {
+    0% {
+      opacity: 1;
+      transform: translateY(0) scale(1) rotate(45deg);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100px) scale(0.5) rotate(90deg);
+    }
+  }
